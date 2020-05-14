@@ -1,0 +1,8 @@
+Q: Hello
+A: Hey
+Q: How are you?
+A: I am good, thanks.
+Q: How have you been?
+A: I have been good, thanks.
+Q: What are you doing?
+A: Talking to you.

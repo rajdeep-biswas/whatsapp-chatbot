@@ -1,0 +1,61 @@
+Traceback (most recent call last):
+  File "<pyshell#31>", line 15, in <module>
+    reply = my_bot.get_response(text).text
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\chatterbot.py", line 139, in get_response
+    response = self.generate_response(input_statement, additional_response_selection_parameters)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\chatterbot.py", line 173, in generate_response
+    if adapter.can_process(input_statement):
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\logic\mathematical_evaluation.py", line 33, in can_process
+    response = self.process(statement)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\logic\mathematical_evaluation.py", line 59, in process
+    mathparse.parse(expression, language=self.language.ISO_639.upper())
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\mathparse\mathparse.py", line 279, in parse
+    return evaluate_postfix(postfix)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\mathparse\mathparse.py", line 211, in evaluate_postfix
+    a = stack.pop()
+IndexError: pop from empty list
+
+Traceback (most recent call last):
+  File "<pyshell#29>", line 15, in <module>
+    reply = my_bot.get_response(text).text
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\chatterbot.py", line 139, in get_response
+    response = self.generate_response(input_statement, additional_response_selection_parameters)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\chatterbot.py", line 173, in generate_response
+    if adapter.can_process(input_statement):
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\logic\mathematical_evaluation.py", line 33, in can_process
+    response = self.process(statement)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\logic\mathematical_evaluation.py", line 59, in process
+    mathparse.parse(expression, language=self.language.ISO_639.upper())
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\mathparse\mathparse.py", line 277, in parse
+    postfix = to_postfix(tokens)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\mathparse\mathparse.py", line 184, in to_postfix
+    while (opstack != []) and (precedence[opstack[-1]] >= precedence[token]):
+KeyError: 'at'
+
+Traceback (most recent call last):
+  File "<pyshell#15>", line 9, in <module>
+    if person in texts.get_attribute("data-pre-plain-text"):
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 141, in get_attribute
+    self, name)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=81.0.4044.138)
+
+Traceback (most recent call last):
+  File "<pyshell#157>", line 6, in <module>
+    driver.find_element(By.XPATH, '//span[@title="' + person + '"]').click()
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Rajdeep\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span dir="auto" title="..." class="_1wjpf _3NFp9 _3FXB1">Jishan</span> is not clickable at point (99, 261). Other element would receive the click: <div class="_3j7s9">...</div>
+  (Session info: chrome=81.0.4044.138)
